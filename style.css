@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+#game-container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #F0F0F0;
+    border: 1px solid #CCC;
+    overflow: hidden;
+}
+
+#basket {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('imgs/basket.png'); 
+    background-size: cover; 
+    bottom: 0;
+    border: 5px solid darkblue;
+    margin: 0 auto; 
+    transform: translateX(-50%);
+}
+
+#basket img {
+    height: 100%; 
+    width: 100%; 
+}
+
+.falling-object {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid red;
+    animation: fall 2s linear;
+}
+
+
+#falling-object {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid red;
+    animation: fall 2s linear;
+}
+
+
+#score {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+@keyframes fall {
+    0% {
+        top: -50px; /* Adjust this value to control the initial position */
+    }
+    100% {
+        top: 350px; /* Adjust this value to control the falling speed */
+    }
+}
+
+.falling {
+    animation: fall 2s linear;
+}
+
+
+
+
+
