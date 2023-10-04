@@ -118,15 +118,13 @@ function checkCollision(fallingObject) {
             fallingObjects.splice(fallingObjects.indexOf(fallingObject), 1);
             createFallingObject(); // Create a new falling object
         }
-    } else if (parseFloat(fallingObject.style.top) >= gameContainer.clientHeight) {
-        // Handle the case where the fallingObject reaches the bottom of the container
+    } else if (fallingObjectRect.bottom >= gameContainer.getBoundingClientRect().bottom) {
+        // Handle the case where the fallingObject reaches the bottom of the gameContainer
         gameContainer.removeChild(fallingObject);
         fallingObjects.splice(fallingObjects.indexOf(fallingObject), 1);
         createFallingObject(); // Create a new falling object
     }
 }
-
-
 
 
 // Function to start the game
