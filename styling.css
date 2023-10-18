@@ -1,7 +1,7 @@
 body {
     text-align: center;
     font-family: Arial, sans-serif;
-    background-image: url('imgs/mushy.gif');
+    background-image: url('imgs/mushroom-wonderland.jpeg');
     background-size: cover;
     min-height: 100vh;
     background-position: center;
@@ -79,20 +79,15 @@ h1 {
     color: #333;
     background-color: whitesmoke;
 }
-@keyframes fall-level1 {
+@keyframes fall-level3 {
     0% {
         top: -50px; /* Adjust this value to control the initial position */
     }
     100% {
-        top: 350px; /* Adjust this value to control the falling speed */
+        top: 550px; /* Adjust this value to control the falling speed */
     }
 }
 
 .falling {
-    animation: fall-level1 2s linear;
+    animation: fall-level3 2s linear;
 }
-
-
-
-
-
